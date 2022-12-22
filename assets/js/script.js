@@ -28,16 +28,12 @@ function init() {
           getWeatherHistory(city);
         });
       }
-      /* 
-      if (newList.length > 0) {
-        getCoordinateInfo(newList[newList.length - 1]);
-      } */
     } else {
       alert("Please enter a city name");
     }
   };
 
-  //function for the history list
+  //This function gets the current weather conditions and the 5-day forecast for the history list
   function getWeatherHistory(cityName) {
     var queryURL =
       "https://api.openweathermap.org/data/2.5/weather?q=" +
@@ -201,7 +197,7 @@ function init() {
         getWeatherInfo(lattitude, longitude);
       });
   }
-
+//This function gets the current weather conditions
   function getOneDay(cityName) {
     var queryURL =
       "https://api.openweathermap.org/data/2.5/weather?q=" +
@@ -258,7 +254,7 @@ function init() {
         localStorage.setItem("city", JSON.stringify(newList));
       });
   }
-
+//This function gets the five-day forecast for the searched city
   function getWeatherInfo(x, y) {
     var requestUrl =
       "https://api.openweathermap.org/data/2.5/forecast?lat=" +
@@ -350,7 +346,7 @@ function init() {
     newList = [];
     location.reload();
   });
-
+//This function enables printing of city history list upon refreshing the page
   window.onload = function () {
     var listItem = document.querySelector(".list-items");
     listItem.children.value = '';

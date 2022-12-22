@@ -20,7 +20,7 @@ Just click on the following link https://cheptegei-create.github.io/Weather-Dash
 As a user, when I click on the website link then I am presented with a website with a header and a search form card. When I enter a city name in the search form input section, then I am presented with the current weather and a five-day weather forecast of the city. The name of the city I entered is saved below the search form. When the user enters a city that does not exist the user gets a warning message below the search form stating that the city does not exist. There is a clear button above the saved list of cities that allows the user to clear and star a new history list. The website is mobile compatible.
 
    
-![alt text](./assets/images/06-server-side-apis-homework-demo.png)
+![alt weather-dashboard screenshot](./assets/images/2022-12-22%20(2).png)
    
 
 ## Credits
